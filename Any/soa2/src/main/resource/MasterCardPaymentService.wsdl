@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://master.das.ufsc.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="MasterCardPaymentServiceService" targetNamespace="http://master.das.ufsc.br/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://master.das.ufsc.br/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://master.das.ufsc.br/">
+  <xs:element name="efetuarPagamento" type="tns:efetuarPagamento"/>
+  <xs:element name="efetuarPagamentoResponse" type="tns:efetuarPagamentoResponse"/>
+  <xs:complexType name="efetuarPagamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="requisicao" type="tns:requisicaoCartaoCredito"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requisicaoCartaoCredito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dataVencimento" type="xs:string"/>
+      <xs:element minOccurs="0" name="nome" type="xs:string"/>
+      <xs:element minOccurs="0" name="numero" type="xs:long"/>
+      <xs:element minOccurs="0" name="valor" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="efetuarPagamentoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:resultadoPagamentoCartaoCredito"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resultadoPagamentoCartaoCredito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="autorizacao" type="xs:string"/>
+      <xs:element name="valor" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcessamentoPagamentoException" type="tns:ProcessamentoPagamentoException"/>
+  <xs:complexType name="ProcessamentoPagamentoException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoErro" type="xs:int"/>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ProcessamentoPagamentoException">
+    <wsdl:part element="tns:ProcessamentoPagamentoException" name="ProcessamentoPagamentoException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="efetuarPagamento">
+    <wsdl:part element="tns:efetuarPagamento" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="efetuarPagamentoResponse">
+    <wsdl:part element="tns:efetuarPagamentoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MasterCardPaymentService">
+    <wsdl:operation name="efetuarPagamento">
+      <wsdl:input message="tns:efetuarPagamento" name="efetuarPagamento">
+    </wsdl:input>
+      <wsdl:output message="tns:efetuarPagamentoResponse" name="efetuarPagamentoResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ProcessamentoPagamentoException" name="ProcessamentoPagamentoException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MasterCardPaymentServiceServiceSoapBinding" type="tns:MasterCardPaymentService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="efetuarPagamento">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="efetuarPagamento">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="efetuarPagamentoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ProcessamentoPagamentoException">
+        <soap:fault name="ProcessamentoPagamentoException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MasterCardPaymentServiceService">
+    <wsdl:port binding="tns:MasterCardPaymentServiceServiceSoapBinding" name="MasterCardPaymentServicePort">
+      <soap:address location="http://localhost:7080/MasterCard/MasterCardPaymentService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

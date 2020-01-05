@@ -1,0 +1,512 @@
+dic 01, 2018 12:23:57 AM org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+INFORMACIÓN: Application {urn:uddi-org:api_v3_portType}UDDIPublicationService#{urn:uddi-org:api_v3_portType}save_binding has thrown exception, unwinding now: org.apache.juddi.v3.error.AuthTokenExpiredException: The authentication token is expired
+dic 01, 2018 12:32:02 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: jar:file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/webapps/juddiv3/WEB-INF/lib/uddi-ws-3.3.2.jar!/uddi_v3_service.wsdl
+dic 01, 2018 1:25:35 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:35 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:36 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:36 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:36 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:26:34 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: jar:file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/webapps/juddiv3/WEB-INF/lib/uddi-ws-3.3.2.jar!/uddi_v3_service.wsdl
+dic 01, 2018 2:14:19 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 2:14:19 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 2:14:19 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 2:14:19 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 2:14:19 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server version:        Apache Tomcat/7.0.64
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server built:          Aug 19 2015 17:18:06 UTC
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server number:         7.0.64.0
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Name:               Windows 10
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Version:            10.0
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Architecture:          x86
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Java Home:             C:\Program Files (x86)\Java\jre1.8.0_191
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Version:           1.8.0_191-b12
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Vendor:            Oracle Corporation
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_BASE:         C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_HOME:         C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Xms1024m
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Xmx1024m
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -XX:MaxPermSize=512m
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -XX:PermSize=256M
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStore=truststore.jks
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStorePassword=password
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStore=truststore.jks
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStorePassword=password
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.keyStore=../conf/keystore.jks
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.keyStorePassword=password
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Xms1024m
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Xmx1024m
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -XX:MaxPermSize=512m
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -XX:PermSize=256M
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStore=truststore.jks
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStorePassword=password
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStore=truststore.jks
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStorePassword=password
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.keyStore=../conf/keystore.jks
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.keyStorePassword=password
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.config.file=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\conf\logging.properties
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.endorsed.dirs=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\endorsed
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.base=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.home=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2
+dic 01, 2018 11:29:17 AM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.io.tmpdir=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\temp
+dic 01, 2018 11:29:17 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMACIÓN: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: C:\Program Files (x86)\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\juaco\AppData\Local\Microsoft\WindowsApps;C:\Python3;C:\Python3\Scripts;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\juaco\AppData\Roaming\npm;C:\Program Files\nodejs;;.
+dic 01, 2018 11:29:17 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["http-bio-9082"]
+dic 01, 2018 11:29:17 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["http-bio-8443"]
+dic 01, 2018 11:29:19 AM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["ajp-bio-8009"]
+dic 01, 2018 11:29:19 AM org.apache.catalina.startup.Catalina load
+INFORMACIÓN: Initialization processed in 2717 ms
+dic 01, 2018 11:29:19 AM org.apache.catalina.core.StandardService startInternal
+INFORMACIÓN: Arrancando servicio Catalina
+dic 01, 2018 11:29:19 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMACIÓN: Starting Servlet Engine: Apache Tomcat/7.0.64
+dic 01, 2018 11:29:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\docs de la aplicación web
+dic 01, 2018 11:29:20 AM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 11:29:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\docs has finished in 1.313 ms
+dic 01, 2018 11:29:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\examples de la aplicación web
+dic 01, 2018 11:29:23 AM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 11:29:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\examples has finished in 2.500 ms
+dic 01, 2018 11:29:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\host-manager de la aplicación web
+dic 01, 2018 11:29:23 AM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 11:29:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\host-manager has finished in 351 ms
+dic 01, 2018 11:29:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddi-gui de la aplicación web
+dic 01, 2018 11:29:25 AM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 11:29:25 AM org.apache.juddi.webconsole.StartupServlet contextInitialized
+INFORMACIÓN: juddi-gui startup
+dic 01, 2018 11:29:25 AM org.apache.juddi.webconsole.StartupServlet contextInitialized
+INFORMACIÓN: Attempting to generate 256 bit AES key
+dic 01, 2018 11:29:25 AM org.apache.juddi.webconsole.StartupServlet contextInitialized
+INFORMACIÓN: Generation of 256 bit AES key successful
+dic 01, 2018 11:29:25 AM org.apache.juddi.webconsole.StartupServlet contextInitialized
+INFORMACIÓN: Storing key to C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddi-gui\META-INF\config.properties
+dic 01, 2018 11:29:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddi-gui has finished in 2.429 ms
+dic 01, 2018 11:29:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3 de la aplicación web
+dic 01, 2018 11:29:31 AM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 11:29:40 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDIInquiryService from class org.uddi.v3_service.UDDIInquiryPortType
+dic 01, 2018 11:29:41 AM org.apache.cxf.bus.spring.OldSpringSupport logWarning
+ADVERTENCIA: Import of META-INF/cxf/cxf-extension-soap.xml has been deprecated and is unnecessary.
+dic 01, 2018 11:29:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /inquiry
+dic 01, 2018 11:29:41 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDIPublicationService from class org.uddi.v3_service.UDDIPublicationPortType
+dic 01, 2018 11:29:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /publish
+dic 01, 2018 11:29:41 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDISecurityService from class org.uddi.v3_service.UDDISecurityPortType
+dic 01, 2018 11:29:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /security
+dic 01, 2018 11:29:41 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDISubscriptionService from class org.uddi.v3_service.UDDISubscriptionPortType
+dic 01, 2018 11:29:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /subscription
+dic 01, 2018 11:29:41 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDISubscriptionListenerService from class org.uddi.v3_service.UDDISubscriptionListenerPortType
+dic 01, 2018 11:29:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /subscription-listener
+dic 01, 2018 11:29:41 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDICustodyTransferService from class org.uddi.v3_service.UDDICustodyTransferPortType
+dic 01, 2018 11:29:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /custody-transfer
+dic 01, 2018 11:29:41 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {http://impl.api.juddi.apache.org/}UDDIValueSetValidationImplService from class org.uddi.v3_service.UDDIValueSetValidationPortType
+dic 01, 2018 11:29:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /valueset-validation
+dic 01, 2018 11:29:41 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {http://impl.api.juddi.apache.org/}UDDIValueSetCachingImplService from class org.uddi.v3_service.UDDIValueSetCachingPortType
+dic 01, 2018 11:29:41 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /valueset-caching
+dic 01, 2018 11:29:41 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:inquiry_v2}Inquire from class org.uddi.v2_service.Inquire
+dic 01, 2018 11:29:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /inquiryv2
+dic 01, 2018 11:29:42 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:publication_v2}Publish from class org.uddi.v2_service.Publish
+dic 01, 2018 11:29:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /publishv2
+dic 01, 2018 11:29:42 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:juddi-apache-org:v3_service}JUDDIApiService from WSDL: classpath:/juddi_api_v1.wsdl
+dic 01, 2018 11:29:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /juddi-api
+dic 01, 2018 11:29:42 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /inquiryRest
+dic 01, 2018 11:29:42 AM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: juddi-admin gui startup
+dic 01, 2018 11:29:42 AM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Attempting to generate 256 bit AES key
+dic 01, 2018 11:29:42 AM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Generation of 256 bit AES key successful
+dic 01, 2018 11:29:42 AM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Storing key to C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3\WEB-INF\config.properties
+dic 01, 2018 11:29:42 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3 has finished in 17.005 ms
+dic 01, 2018 11:29:42 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3replication de la aplicación web
+dic 01, 2018 11:29:47 AM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 11:29:49 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDI_Replication_PortType from class org.uddi.v3_service.UDDIReplicationPortType
+dic 01, 2018 11:29:50 AM org.apache.cxf.bus.spring.OldSpringSupport logWarning
+ADVERTENCIA: Import of META-INF/cxf/cxf-extension-soap.xml has been deprecated and is unnecessary.
+dic 01, 2018 11:29:50 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /replication
+dic 01, 2018 11:29:50 AM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: juddi-admin gui startup
+dic 01, 2018 11:29:50 AM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Attempting to generate 256 bit AES key
+dic 01, 2018 11:29:50 AM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Generation of 256 bit AES key successful
+dic 01, 2018 11:29:50 AM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Storing key to C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3replication\WEB-INF\config.properties
+dic 01, 2018 11:29:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3replication has finished in 7.419 ms
+dic 01, 2018 11:29:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\manager de la aplicación web
+dic 01, 2018 11:29:50 AM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 11:29:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\manager has finished in 339 ms
+dic 01, 2018 11:29:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\ROOT de la aplicación web
+dic 01, 2018 11:29:50 AM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 11:29:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\ROOT has finished in 254 ms
+dic 01, 2018 11:29:50 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["http-bio-9082"]
+dic 01, 2018 11:29:50 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["http-bio-8443"]
+dic 01, 2018 11:29:50 AM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["ajp-bio-8009"]
+dic 01, 2018 11:29:50 AM org.apache.catalina.startup.Catalina start
+INFORMACIÓN: Server startup in 31726 ms
+dic 01, 2018 11:30:43 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 11:30:44 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 11:30:45 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 11:30:45 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 11:30:45 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:12 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:12 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:12 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:12 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:25:13 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 1:26:02 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: jar:file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/webapps/juddiv3/WEB-INF/lib/uddi-ws-3.3.2.jar!/uddi_v3_service.wsdl
+dic 01, 2018 1:26:06 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: jar:file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/webapps/juddiv3/WEB-INF/lib/uddi-ws-3.3.2.jar!/uddi_v3_service.wsdl
+dic 01, 2018 1:26:11 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: jar:file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/webapps/juddiv3/WEB-INF/lib/uddi-ws-3.3.2.jar!/uddi_v3_service.wsdl
+dic 01, 2018 1:26:11 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: jar:file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/webapps/juddiv3/WEB-INF/lib/uddi-ws-3.3.2.jar!/uddi_v3_service.wsdl
+dic 01, 2018 1:26:13 PM org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+INFORMACIÓN: Application {urn:uddi-org:api_v3_portType}UDDIPublicationService#{urn:uddi-org:api_v3_portType}save_business has thrown exception, unwinding now: org.apache.juddi.v3.error.FatalErrorException: A serious technical error has occurred while processing the request.:  The transaction has been rolled back.  See the nested exceptions for details on the errors that occurred.
+dic 01, 2018 1:27:34 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: jar:file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/webapps/juddiv3/WEB-INF/lib/uddi-ws-3.3.2.jar!/uddi_v3_service.wsdl
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server version:        Apache Tomcat/7.0.64
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server built:          Aug 19 2015 17:18:06 UTC
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Server number:         7.0.64.0
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Name:               Windows 10
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: OS Version:            10.0
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Architecture:          x86
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Java Home:             C:\Program Files (x86)\Java\jre1.8.0_191
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Version:           1.8.0_191-b12
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: JVM Vendor:            Oracle Corporation
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_BASE:         C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: CATALINA_HOME:         C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Xms1024m
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Xmx1024m
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -XX:MaxPermSize=512m
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -XX:PermSize=256M
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStore=truststore.jks
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStorePassword=password
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStore=truststore.jks
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStorePassword=password
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.keyStore=../conf/keystore.jks
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.keyStorePassword=password
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Xms1024m
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Xmx1024m
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -XX:MaxPermSize=512m
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -XX:PermSize=256M
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStore=truststore.jks
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStorePassword=password
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStore=truststore.jks
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.trustStorePassword=password
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.keyStore=../conf/keystore.jks
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djavax.net.ssl.keyStorePassword=password
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.config.file=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\conf\logging.properties
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.endorsed.dirs=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\endorsed
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.base=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Dcatalina.home=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2
+dic 01, 2018 5:02:51 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMACIÓN: Command line argument: -Djava.io.tmpdir=C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\temp
+dic 01, 2018 5:02:51 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMACIÓN: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: C:\Program Files (x86)\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\juaco\AppData\Local\Microsoft\WindowsApps;C:\Python3;C:\Python3\Scripts;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\juaco\AppData\Roaming\npm;C:\Program Files\nodejs;;.
+dic 01, 2018 5:02:51 PM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["http-bio-9082"]
+dic 01, 2018 5:02:51 PM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["http-bio-8443"]
+dic 01, 2018 5:02:52 PM org.apache.coyote.AbstractProtocol init
+INFORMACIÓN: Initializing ProtocolHandler ["ajp-bio-8009"]
+dic 01, 2018 5:02:52 PM org.apache.catalina.startup.Catalina load
+INFORMACIÓN: Initialization processed in 1723 ms
+dic 01, 2018 5:02:52 PM org.apache.catalina.core.StandardService startInternal
+INFORMACIÓN: Arrancando servicio Catalina
+dic 01, 2018 5:02:52 PM org.apache.catalina.core.StandardEngine startInternal
+INFORMACIÓN: Starting Servlet Engine: Apache Tomcat/7.0.64
+dic 01, 2018 5:02:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\docs de la aplicación web
+dic 01, 2018 5:02:53 PM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 5:02:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\docs has finished in 884 ms
+dic 01, 2018 5:02:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\examples de la aplicación web
+dic 01, 2018 5:02:55 PM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 5:02:55 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\examples has finished in 2.025 ms
+dic 01, 2018 5:02:55 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\host-manager de la aplicación web
+dic 01, 2018 5:02:56 PM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 5:02:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\host-manager has finished in 368 ms
+dic 01, 2018 5:02:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddi-gui de la aplicación web
+dic 01, 2018 5:02:58 PM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 5:02:58 PM org.apache.juddi.webconsole.StartupServlet contextInitialized
+INFORMACIÓN: juddi-gui startup
+dic 01, 2018 5:02:58 PM org.apache.juddi.webconsole.StartupServlet contextInitialized
+INFORMACIÓN: Attempting to generate 256 bit AES key
+dic 01, 2018 5:02:58 PM org.apache.juddi.webconsole.StartupServlet contextInitialized
+INFORMACIÓN: Generation of 256 bit AES key successful
+dic 01, 2018 5:02:58 PM org.apache.juddi.webconsole.StartupServlet contextInitialized
+INFORMACIÓN: Storing key to C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddi-gui\META-INF\config.properties
+dic 01, 2018 5:02:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddi-gui has finished in 2.680 ms
+dic 01, 2018 5:02:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3 de la aplicación web
+dic 01, 2018 5:03:01 PM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 5:03:14 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDIInquiryService from class org.uddi.v3_service.UDDIInquiryPortType
+dic 01, 2018 5:03:15 PM org.apache.cxf.bus.spring.OldSpringSupport logWarning
+ADVERTENCIA: Import of META-INF/cxf/cxf-extension-soap.xml has been deprecated and is unnecessary.
+dic 01, 2018 5:03:16 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /inquiry
+dic 01, 2018 5:03:16 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDIPublicationService from class org.uddi.v3_service.UDDIPublicationPortType
+dic 01, 2018 5:03:16 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /publish
+dic 01, 2018 5:03:16 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDISecurityService from class org.uddi.v3_service.UDDISecurityPortType
+dic 01, 2018 5:03:16 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /security
+dic 01, 2018 5:03:16 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDISubscriptionService from class org.uddi.v3_service.UDDISubscriptionPortType
+dic 01, 2018 5:03:17 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /subscription
+dic 01, 2018 5:03:17 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDISubscriptionListenerService from class org.uddi.v3_service.UDDISubscriptionListenerPortType
+dic 01, 2018 5:03:17 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /subscription-listener
+dic 01, 2018 5:03:17 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDICustodyTransferService from class org.uddi.v3_service.UDDICustodyTransferPortType
+dic 01, 2018 5:03:17 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /custody-transfer
+dic 01, 2018 5:03:17 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {http://impl.api.juddi.apache.org/}UDDIValueSetValidationImplService from class org.uddi.v3_service.UDDIValueSetValidationPortType
+dic 01, 2018 5:03:18 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /valueset-validation
+dic 01, 2018 5:03:18 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {http://impl.api.juddi.apache.org/}UDDIValueSetCachingImplService from class org.uddi.v3_service.UDDIValueSetCachingPortType
+dic 01, 2018 5:03:18 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /valueset-caching
+dic 01, 2018 5:03:18 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:inquiry_v2}Inquire from class org.uddi.v2_service.Inquire
+dic 01, 2018 5:03:18 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /inquiryv2
+dic 01, 2018 5:03:18 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:publication_v2}Publish from class org.uddi.v2_service.Publish
+dic 01, 2018 5:03:18 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /publishv2
+dic 01, 2018 5:03:19 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:juddi-apache-org:v3_service}JUDDIApiService from WSDL: classpath:/juddi_api_v1.wsdl
+dic 01, 2018 5:03:19 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /juddi-api
+dic 01, 2018 5:03:19 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /inquiryRest
+dic 01, 2018 5:03:19 PM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: juddi-admin gui startup
+dic 01, 2018 5:03:19 PM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Attempting to generate 256 bit AES key
+dic 01, 2018 5:03:19 PM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Generation of 256 bit AES key successful
+dic 01, 2018 5:03:19 PM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Storing key to C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3\WEB-INF\config.properties
+dic 01, 2018 5:03:19 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3 has finished in 21.019 ms
+dic 01, 2018 5:03:19 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3replication de la aplicación web
+dic 01, 2018 5:03:27 PM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 5:03:29 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFORMACIÓN: Creating Service {urn:uddi-org:api_v3_portType}UDDI_Replication_PortType from class org.uddi.v3_service.UDDIReplicationPortType
+dic 01, 2018 5:03:30 PM org.apache.cxf.bus.spring.OldSpringSupport logWarning
+ADVERTENCIA: Import of META-INF/cxf/cxf-extension-soap.xml has been deprecated and is unnecessary.
+dic 01, 2018 5:03:30 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFORMACIÓN: Setting the server's publish address to be /replication
+dic 01, 2018 5:03:30 PM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: juddi-admin gui startup
+dic 01, 2018 5:03:30 PM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Attempting to generate 256 bit AES key
+dic 01, 2018 5:03:30 PM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Generation of 256 bit AES key successful
+dic 01, 2018 5:03:30 PM org.apache.juddi.adminconsole.StartupServlet contextInitialized
+INFORMACIÓN: Storing key to C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3replication\WEB-INF\config.properties
+dic 01, 2018 5:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\juddiv3replication has finished in 11.362 ms
+dic 01, 2018 5:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\manager de la aplicación web
+dic 01, 2018 5:03:31 PM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 5:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\manager has finished in 395 ms
+dic 01, 2018 5:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Despliegue del directorio C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\ROOT de la aplicación web
+dic 01, 2018 5:03:31 PM org.apache.catalina.startup.TldConfig execute
+INFORMACIÓN: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+dic 01, 2018 5:03:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMACIÓN: Deployment of web application directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\webapps\ROOT has finished in 310 ms
+dic 01, 2018 5:03:31 PM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["http-bio-9082"]
+dic 01, 2018 5:03:31 PM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["http-bio-8443"]
+dic 01, 2018 5:03:31 PM org.apache.coyote.AbstractProtocol start
+INFORMACIÓN: Starting ProtocolHandler ["ajp-bio-8009"]
+dic 01, 2018 5:03:31 PM org.apache.catalina.startup.Catalina start
+INFORMACIÓN: Server startup in 39183 ms
+dic 01, 2018 5:18:25 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 5:18:27 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 5:18:27 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 5:18:27 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl
+dic 01, 2018 5:18:28 PM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromWSDL
+INFORMACIÓN: Creating Service {urn:uddi-org:v3_service}UDDI_Service from WSDL: file:/C:/juddi-tomcat-3.3.2/juddi-tomcat-3.3.2/work/Catalina/localhost/juddi-gui/loader/uddi_v3_service.wsdl

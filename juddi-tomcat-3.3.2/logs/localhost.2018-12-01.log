@@ -1,0 +1,28 @@
+dic 01, 2018 11:29:23 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextInitialized()
+dic 01, 2018 11:29:23 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextInitialized()
+dic 01, 2018 11:29:23 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@115075')
+dic 01, 2018 11:29:31 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: No Spring WebApplicationInitializer types detected on classpath
+dic 01, 2018 11:29:31 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Initializing Spring root WebApplicationContext
+dic 01, 2018 11:29:47 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: No Spring WebApplicationInitializer types detected on classpath
+dic 01, 2018 11:29:47 AM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Initializing Spring root WebApplicationContext
+dic 01, 2018 5:02:55 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: contextInitialized()
+dic 01, 2018 5:02:55 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: SessionListener: contextInitialized()
+dic 01, 2018 5:02:55 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1577125')
+dic 01, 2018 5:03:01 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: No Spring WebApplicationInitializer types detected on classpath
+dic 01, 2018 5:03:02 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Initializing Spring root WebApplicationContext
+dic 01, 2018 5:03:27 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: No Spring WebApplicationInitializer types detected on classpath
+dic 01, 2018 5:03:27 PM org.apache.catalina.core.ApplicationContext log
+INFORMACIÓN: Initializing Spring root WebApplicationContext

@@ -1,0 +1,6 @@
+127.0.0.1 - - [24/Oct/2016:22:30:48 -0200] "POST /juddiv3/services/inquiry HTTP/1.1" 200 905
+127.0.0.1 - - [24/Oct/2016:22:30:48 -0200] "POST /juddiv3/services/inquiry HTTP/1.1" 200 2944
+127.0.0.1 - - [24/Oct/2016:22:30:52 -0200] "POST /juddiv3/services/inquiry HTTP/1.1" 200 905
+127.0.0.1 - - [24/Oct/2016:22:30:52 -0200] "POST /juddiv3/services/inquiry HTTP/1.1" 200 2944
+127.0.0.1 - - [24/Oct/2016:22:30:53 -0200] "POST /juddiv3/services/inquiry HTTP/1.1" 200 905
+127.0.0.1 - - [24/Oct/2016:22:30:53 -0200] "POST /juddiv3/services/inquiry HTTP/1.1" 200 2944

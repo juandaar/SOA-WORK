@@ -1,0 +1,6 @@
+----------------------------------------------------------------
+2018-12-03 12:11:02.283 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance a816c00e-0167-73fa-9728-000034fad428
+on database directory C:\juddi-tomcat-3.3.2\juddi-tomcat-3.3.2\bin\target\juddi-derby-test-db  
+
+Database Class Loader started - derby.database.classpath=''

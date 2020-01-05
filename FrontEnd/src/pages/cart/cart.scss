@@ -1,0 +1,43 @@
+page-cart {
+    .row {
+        border-bottom: 1px solid #e5e5e5;
+        padding: 16px 16px;
+    }
+    .item-title {
+        font-size: 15px;
+    }
+
+    .amount-top {
+        padding: 16px;
+        position: sticky;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        color: black;
+        min-height: 55px;
+        font-size: 2rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+        .total-label {
+            color: black;
+        }
+
+        .grid,
+        .row,
+        .col {
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            border-bottom: 0;
+        }
+    }
+        .price {
+        font-size: 14px;
+        color: #666;
+    }
+
+}

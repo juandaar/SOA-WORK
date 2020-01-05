@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:mongo="http://www.mulesoft.org/schema/mule/mongo" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:wmq="http://www.mulesoft.org/schema/mule/ee/wmq" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns:jersey="http://www.mulesoft.org/schema/mule/jersey" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/jersey http://www.mulesoft.org/schema/mule/jersey/current/mule-jersey.xsd
+http://www.mulesoft.org/schema/mule/cxf http://www.mulesoft.org/schema/mule/cxf/current/mule-cxf.xsd
+http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd
+http://www.mulesoft.org/schema/mule/ee/wmq http://www.mulesoft.org/schema/mule/ee/wmq/current/mule-wmq-ee.xsd
+http://www.mulesoft.org/schema/mule/mongo http://www.mulesoft.org/schema/mule/mongo/current/mule-mongo.xsd">
+    <http:listener-config name="Interface" host="0.0.0.0" port="10000" doc:name="HTTP Listener Configuration"/>
+    <http:request-config name="CEP" protocol="HTTPS" host="#[flowVars.cepAddress.host]" port="#[flowVars.cepAddress.port]" doc:name="HTTP Request Configuration" basePath="#[flowVars.cepAddress.path]"/>
+    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="CEPService.wsdl" service="CEPServiceSoapService" port="CEPServicePort" serviceAddress="https://#[flowVars.cepAddress]" doc:name="Web Service Consumer"/>
+    <ws:consumer-config name="Web_Service_Consumer1" wsdlLocation="MasterCardPaymentService.wsdl" service="MasterCardPaymentServiceService" port="MasterCardPaymentServicePort" serviceAddress="http://#[flowVars.VisaAddress.host]" doc:name="Web Service Consumer"/>
+    <ws:consumer-config name="Web_Service_Consumer2" wsdlLocation="MasterCardPaymentService.wsdl" service="MasterCardPaymentServiceService" port="MasterCardPaymentServicePort" serviceAddress="http://#[flowVars.MasterAddress.host]" doc:name="Web Service Consumer"/>
+    <http:request-config name="BrRobots" host="#[flowVars.BrRobioticsAddress]" doc:name="HTTP Request Configuration"/>
+    <http:request-config name="Stark" host="#[flowVars.StarkAddress]" doc:name="HTTP Request Configuration"/>
+    <http:request-config name="BrRobotsAddress" host="#[flowVars.BrRobotsAddress.host]" port="#[flowVars.BrRobotsAddress.port]" basePath="#[flowVars.BrRobotsAddress.path]" doc:name="HTTP Request Configuration"/>
+    <http:request-config name="StarkRequest" host="#[flowVars.StarkAddress.host]" port="#[flowVars.StarkAddress.port]" basePath="#[flowVars.StarkAddress.path]" doc:name="HTTP Request Configuration"/>
+    <mongo:config name="mongo" username=" admin" database="NewTecDataBase" doc:name="Mongo DB"/>
+    <http:request-config name="HTTP_Request_Configuration" host="#[flowVars.DataBaseAddress.host]" port="#[flowVars.DataBaseAddress.port]" basePath="#[flowVars.DataBaseAddress.path]" doc:name="HTTP Request Configuration"/>
+    <flow name="soa2Flow">
+        <http:listener config-ref="Interface" path="/SOAserver" doc:name="Interface">
+            <http:response-builder>
+                <http:header headerName="Access-Control-Allow-Origin" value="*"/>
+                <http:header headerName="Access-Control-Allow-Headers" value="Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"/>
+            </http:response-builder>
+        </http:listener>
+        <choice doc:name="">
+            <when expression="#[!(payload==null)]">
+                <json:json-to-object-transformer returnClass="br.ufsc.das.Request" doc:name="JSON to Object"/>
+                <logger message="the client form is correctly filled " level="INFO" doc:name="Comment"/>
+                <enricher doc:name="Message Enricher">
+                    <processor-chain doc:name="Processor Chain">
+                        <scripting:component doc:name="CEP Discovery">
+                            <scripting:script engine="Groovy"><![CDATA[import br.ufsc.das.discovery.advance.ServiceDiscoveryHelper
+import org.mule.api.transport.PropertyScope
+
+message.setProperty("cepAddress", ServiceDiscoveryHelper.discoverServiceEndpoint("CEPRestService","REST"), PropertyScope.INVOCATION)
+
+return payload
+]]></scripting:script>
+                        </scripting:component>
+                        <http:request config-ref="CEP" path="/cepInfo/#[payload.cepnumber]" method="GET" doc:name="CEP"/>
+                        <json:json-to-object-transformer returnClass="br.ufsc.das.Cep" doc:name="JSON to Object"/>
+                    </processor-chain>
+                    <enrich source="#[payload]" target="#[payload.cep]"/>
+                </enricher>
+                <logger message="CEP was correctly processed" level="INFO" doc:name="Comment"/>
+                <enricher doc:name="Message Enricher">
+                    <scatter-gather doc:name="Services">
+                        <processor-chain>
+                            <scripting:component doc:name="BrRobots Discovery">
+                                <scripting:script engine="Groovy"><![CDATA[import br.ufsc.das.discovery.advance.ServiceDiscoveryHelper
+import org.mule.api.transport.PropertyScope
+
+message.setProperty("BrRobotsAddress", ServiceDiscoveryHelper.discoverServiceEndpoint("BrRobotsService","REST"), PropertyScope.INVOCATION)
+
+return payload
+]]></scripting:script>
+                            </scripting:component>
+                            <dw:transform-message doc:name="Transform Message" metadata:id="e1b6ed30-3443-4ad0-bf9b-f15d0dbbc314">
+                                <dw:input-payload mimeType="application/java"/>
+                                <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	products: payload.companyproducts[0].products
+	
+}]]></dw:set-payload>
+                            </dw:transform-message>
+                            <http:request config-ref="BrRobotsAddress" path="/order" method="POST" doc:name="BrRobotics">
+                                <http:request-builder>
+                                    <http:header headerName="Content-Type" value="application/json"/>
+                                </http:request-builder>
+                            </http:request>
+                            <json:json-to-object-transformer returnClass="br.ufsc.das.Payment" doc:name="JSON to Object"/>
+                        </processor-chain>
+                        <processor-chain>
+                            <scripting:component doc:name="Stark Discovery">
+                                <scripting:script engine="Groovy"><![CDATA[import br.ufsc.das.discovery.advance.ServiceDiscoveryHelper
+import org.mule.api.transport.PropertyScope
+
+message.setProperty("StarkAddress", ServiceDiscoveryHelper.discoverServiceEndpoint("StarkService","REST"), PropertyScope.INVOCATION)
+
+return payload
+]]></scripting:script>
+                            </scripting:component>
+                            <dw:transform-message doc:name="Transform Message" metadata:id="51c93685-44ae-4df4-9364-83c97220a7e1">
+                                <dw:input-payload mimeType="application/java"/>
+                                <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	products: payload.companyproducts[1].products
+	
+}]]></dw:set-payload>
+                            </dw:transform-message>
+                            <http:request config-ref="StarkRequest" path="/order" method="POST" doc:name="Stark">
+                                <http:request-builder>
+                                    <http:header headerName="Content-Type" value="application/json"/>
+                                </http:request-builder>
+                            </http:request>
+                            <json:json-to-object-transformer returnClass="br.ufsc.das.Payment" doc:name="JSON to Object"/>
+                        </processor-chain>
+                    </scatter-gather>
+                    <enrich source="#[payload.get(0)]" target="#[payload.companyproducts[0].payment]"/>
+                    <enrich source="#[payload.get(1)]" target="#[payload.companyproducts[1].payment]"/>
+                </enricher>
+                <logger message="Service communications were correctly ended " level="INFO" doc:name="Logger"/>
+                <enricher doc:name="Message Enricher">
+                    <choice tracking:enable-default-events="true" doc:name="Payment">
+                        <when expression="#[payload.card==&quot;1&quot;]">
+                            <scripting:component doc:name="Visa Discovery">
+                                <scripting:script engine="Groovy"><![CDATA[import br.ufsc.das.discovery.advance.ServiceDiscoveryHelper
+import org.mule.api.transport.PropertyScope
+
+message.setProperty("VisaAddress", ServiceDiscoveryHelper.discoverServiceEndpoint("VisaService","SOAP"), PropertyScope.INVOCATION)
+
+return payload
+]]></scripting:script>
+                            </scripting:component>
+                            <dw:transform-message doc:name="Transform Message" metadata:id="e4cac462-13ad-4f03-a6a8-623505e5f34f">
+                                <dw:input-payload mimeType="application/java"/>
+                                <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns1 http://visa.das.ufsc.br/
+---
+{
+	ns1#efetuarPagamento: {
+		requisicao:{
+		dataVencimento: payload.cardExpiration,
+		nome: payload.name,
+		numero: payload.cardnumber,
+		valor:payload.Total
+			
+		}
+		
+	}
+}
+
+]]></dw:set-payload>
+                            </dw:transform-message>
+                            <ws:consumer config-ref="Web_Service_Consumer1" operation="efetuarPagamento" doc:name="Visa"/>
+                        </when>
+                        <when expression="#[payload.card==&quot;2&quot;]">
+                            <scripting:component doc:name="Master Discovery">
+                                <scripting:script engine="Groovy"><![CDATA[import br.ufsc.das.discovery.advance.ServiceDiscoveryHelper
+import org.mule.api.transport.PropertyScope
+
+message.setProperty("MasterAddress", ServiceDiscoveryHelper.discoverServiceEndpoint("MasterService","SOAP"), PropertyScope.INVOCATION)
+
+return payload
+]]></scripting:script>
+                            </scripting:component>
+                            <dw:transform-message doc:name="Transform Message" metadata:id="9c988d9b-e52c-4d5e-be95-1e91d2014601">
+                                <dw:input-payload mimeType="application/java"/>
+                                <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns2 http://master.das.ufsc.br/
+---
+{
+	ns2#efetuarPagamento: {
+		requisicao:{
+		dataVencimento: payload.cardExpiration,
+		nome: payload.name,
+		numero: payload.cardnumber,
+		valor: payload.Total
+		
+		}
+		
+	}
+}
+]]></dw:set-payload>
+                            </dw:transform-message>
+                            <ws:consumer config-ref="Web_Service_Consumer2" operation="efetuarPagamento" doc:name="MasterCard"/>
+                        </when>
+                        <otherwise>
+                            <logger message="Mierdaaaa" level="INFO" doc:name="Logger"/>
+                        </otherwise>
+                    </choice>
+                    <enrich source="#[xpath('//autorizacao')]" target="#[payload.paymentautorization]"/>
+                    <enrich source="#[xpath('//valor')]" target="#[payload.paymentvalue]"/>
+                </enricher>
+                <logger message="The payment process was correctly processed " level="INFO" doc:name="Logger"/>
+                <scripting:component doc:name="DataBase discovery">
+                    <scripting:script engine="Groovy"><![CDATA[import br.ufsc.das.discovery.advance.ServiceDiscoveryHelper
+import org.mule.api.transport.PropertyScope
+
+message.setProperty("DataBaseAddress", ServiceDiscoveryHelper.discoverServiceEndpoint("DataBaseService","REST"), PropertyScope.INVOCATION)
+
+return payload
+]]></scripting:script>
+                </scripting:component>
+                <dw:transform-message doc:name="Transform Message" metadata:id="1147aca7-3584-45da-b303-0f42967d9291">
+                    <dw:input-payload mimeType="application/java"/>
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	name: payload.name,
+	email:payload.email,
+	address: payload.cep,
+	payments:
+	[
+		{
+			company: payload.companyproducts[0].company,
+			code:payload.companyproducts[0].payment.ordercode,
+			value:payload.companyproducts[0].payment.price
+			
+		},
+	
+		{
+			company: payload.companyproducts[1].company,
+			code:payload.companyproducts[1].payment.ordercode,
+			value:payload.companyproducts[1].payment.price
+			
+		}		
+	],
+	card:payload.payment.card,
+	paymentcode:payload.paymentautorization,
+	cardcost:payload.cardprice,
+	discount:payload.discount,
+	price:payload.total
+
+}]]></dw:set-payload>
+                </dw:transform-message>
+                <http:request config-ref="HTTP_Request_Configuration" path="/saves" method="POST" doc:name="DataBase">
+                    <http:request-builder>
+                        <http:header headerName="Content-Type" value="application/json"/>
+                    </http:request-builder>
+                </http:request>
+                <logger message="The information was correctly storaged in MongoDB DataBase #[payload]" level="INFO" doc:name="Logger"/>
+            </when>
+            <otherwise>
+                <logger message="NULL" level="INFO" doc:name="Logger"/>
+            </otherwise>
+        </choice>
+        <set-payload value=" #[payload]" doc:name="Set Payload"/>
+
+    </flow>
+</mule>

@@ -1,0 +1,104 @@
+<ion-header no-border>
+  <ion-navbar>
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title text-center>Order</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-padding no-margin *ngIf="this.navParams.get('order')"  >
+    <ion-row text-center border-bottom>
+      <ion-col>Created on:  <strong>{{ order.dt_created | date: 'dd/MM/yyyy HH:mm:ss' }}</strong></ion-col>
+    </ion-row>
+    <ion-row no-border *ngFor="let item of order.cart.items">
+      <ion-col col-4 class="item-title">
+        <ion-icon [name]="item.icon" item-start></ion-icon> {{ item.description }}
+      </ion-col>
+      <ion-col col-4 class="item-title" text-center>
+        {{item.qty }}x {{ (item.price*(1-item.GlobalDiscount)) | currency: 'BRL'}}
+      </ion-col>
+      <ion-col col-4 class="item-title" text-right>
+          {{ ((item.price * item.qty)*(1-item.GlobalDiscount))  | currency: 'BRL'}}
+        </ion-col>
+    </ion-row>
+    <ion-row border-top border-bottom>
+      <ion-col col-6>
+        <h3>TOTAL</h3>
+      </ion-col >
+      <ion-col col-6 text-right>
+          <h3>{{  order.order_value | currency: 'BRL'}}</h3>
+      </ion-col >
+    </ion-row>
+     <div border-top border-bottom  id="factura">
+     </div>
+  </ion-list>
+
+ 
+
+ <form [formGroup]="myForm" id="objetive" (ngSubmit)="saveData()">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-start></ion-icon>
+        <ion-label stacked>Name:</ion-label>
+        <ion-input formControlName="name" type="text" placeholder="Name"></ion-input>
+      </ion-item>
+
+        <ion-item>
+        <ion-icon name="mail" item-start></ion-icon>
+        <ion-label stacked>Email:</ion-label>
+        <ion-input formControlName="email" type="email" placeholder="E-mail"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="globe" item-start></ion-icon>
+        <ion-label stacked>CEP:</ion-label>
+        <ion-input formControlName="cep" type="number"  maxlength="8" minlength="8" placeholder="CEP"></ion-input>
+      </ion-item>
+       <ion-label text-center ><h3>Payment Method</h3></ion-label>
+      <ion-row radio-group formControlName="paymentmethod" >
+        
+          <ion-col>
+            <ion-item>
+               <ion-img width="80" height="80" src="assets/imgs/Visa.png" item-start></ion-img>
+              <!--<ion-icon name="Visa" item-start></ion-icon>-->
+              <ion-label>Visa</ion-label>
+              <ion-radio value="1"></ion-radio><!--(ionSelect)="paymentchange(i,1)"-->
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-img width="80" height="80" src="assets/imgs/master.png" item-start></ion-img>
+              <ion-label>Mastercard</ion-label>
+              <ion-radio value="2" ></ion-radio><!--(ionSelect)="paymentchange(i,2)"-->
+            </ion-item>
+          </ion-col>
+      </ion-row>
+
+        <ion-item>
+        <ion-icon name="card" item-start></ion-icon>
+        <ion-label stacked>card number:</ion-label>
+        <ion-input formControlName="card" maxlength="16" minlength="16"  type="number" placeholder="Card Number"></ion-input>
+       </ion-item> 
+       <ion-label text-center ><h3>Expiration Date</h3></ion-label>
+       <ion-icon name="calendar" item-start></ion-icon>
+      <ion-item>
+          <ion-input formControlName="month" maxlength="2" minlength="2"  type="number" placeholder="Month"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input formControlName="year" maxlength="4" minlength="4"  type="number" placeholder="Year"></ion-input>
+      </ion-item>
+  
+
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!myForm.valid" >Buy</button>
+    </div>
+    <div padding id="error"></div>
+  </form>
+</ion-content>
+<ion-footer padding>
+   <!--<button ion-button mode="ios" block (click)="navCtrl.setRoot('ListPage')">Buy</button>-->
+</ion-footer>
+  

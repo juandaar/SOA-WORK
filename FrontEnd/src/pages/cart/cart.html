@@ -1,0 +1,36 @@
+<ion-header no-border>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Shopping cart</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="amount-top" *ngIf="this.navParams.get('cart')">
+    <ion-grid>
+      <ion-row no-border>
+        <ion-col col-6 text-left> TOTAL</ion-col>
+        <ion-col col-6 text-right><strong>{{ total | currency: 'BRL' }}</strong></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <ion-list no-padding no-margin *ngIf="this.navParams.get('cart') && cart.items.length > 0">
+    <ion-row *ngFor="let item of cart.items">
+      <ion-col col-3 class="item-title">
+        <ion-icon [name]="item.icon" item-start></ion-icon> {{ item.description }}
+        <br/><br/><span class="price">Discount: {{ item.GlobalDiscountCommment}}</span>
+      </ion-col>
+      <ion-col col-3 class="item-title" text-center>
+        <strong>Qty: </strong> {{item.qty }}  
+      </ion-col>
+      <ion-col col-6 class="item-title" text-right>
+        <strong>Subtotal: </strong> {{ (item.price* item.qty-(item.price * item.qty)*item.GlobalDiscount) | currency: 'BRL'}}
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content>
+<ion-footer padding>
+    <button ion-button mode="ios" block (click)="updateCollection()">Create order</button>
+</ion-footer>
